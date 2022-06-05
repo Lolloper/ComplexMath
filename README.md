@@ -18,4 +18,3 @@ This library also includes some other useful functions, like rad2deg and deg2rad
 Rembemer that $a + bi$ and $c + di$ are complex numbers    
 $(a + bi)(c + di) = ac - bd + (ad + bc)i$  
 $\frac{a + bi}{c + di} = \frac{0}{c^2 + d^2}$
-SEXSEXSEXSEX
