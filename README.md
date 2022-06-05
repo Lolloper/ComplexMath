@@ -12,3 +12,7 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 
 ### Other functionalities
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
+
+### Formula references
+Rembemer that __a + bi__ and __c + di__ are complex numbers    
+(a + bi)(c + di) = ac - bd + (ad + bc)i
