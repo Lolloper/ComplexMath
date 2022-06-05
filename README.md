@@ -5,7 +5,9 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 
 |Operation| Action|
 |---------|-------|
-|         |       |
+|CM_Sum   |Sums 2 numbers|
+|-------|----|
+|CM_Sub   |Subtract the second number from the first one|
 
 ### Other functionalities
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
