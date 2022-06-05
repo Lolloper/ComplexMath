@@ -17,4 +17,4 @@ This library also includes some other useful functions, like rad2deg and deg2rad
 ### Formula references
 Rembemer that _a + bi_ and _c + di_ are complex numbers    
 (a + bi)(c + di) = ac - bd + (ad + bc)i  
-(a + bi)/(c + di) = (ac + bd + (bc - ad)i)/(c^2 ^ $d^2$)
+(a + bi)/(c + di) = (ac + bd + (bc - ad)$i$)/(c^2 ^ $d^2$)
