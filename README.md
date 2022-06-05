@@ -16,5 +16,5 @@ This library also includes some other useful functions, like rad2deg and deg2rad
 
 ### Formula references
 Rembemer that $a + bi$ and $c + di$ are complex numbers    
-$(a + bi)(c + di) = ac - bd + (ad + bc)i$  
-$\frac{a + bi}{c + di} = \frac{ac+bd}{c^2 + d^2} + \frac{bc - ac}{c^2 + d^2}i$
+**1***: $(a + bi)(c + di) = ac - bd + (ad + bc)i$  
+**2***: $\frac{a + bi}{c + di} = \frac{ac+bd}{c^2 + d^2} + \frac{bc - ac}{c^2 + d^2}i$
