@@ -6,7 +6,6 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 |Operation| Action|
 |---------|-------|
 |CM_Sum   |Sums 2 numbers|
-|-------|----|
 |CM_Sub   |Subtract the second number from the first one|
 
 ### Other functionalities
