@@ -1,11 +1,11 @@
 #include <math.h>
 /* PI value */
-#define B_PI 3.141592653589793
+#define CM_PI 3.141592653589793
 
 
 /* Radians and degrees converter functions */
-#define B_rad2deg(x) 180*x/B_PI
-#define B_deg2rad(x) B_PI*x/180
+#define CM_rad2deg(x) 180*x/B_PI
+#define CM_deg2rad(x) B_PI*x/180
 
 /* Complex number struct */
 typedef struct {
