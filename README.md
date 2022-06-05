@@ -15,6 +15,6 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
 
 ### Formula references
-Rembemer that _a + bi_ and _c + di_ are complex numbers    
+Rembemer that $a + bi$ and $c + di$ are complex numbers    
 $(a + bi)(c + di) = ac - bd + (ad + bc)i$  
 $(a + bi)/(c + di) = (ac + bd + (bc - ad)i)/(c^2 ^ d^2)$
