@@ -13,6 +13,7 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 |CM_Sub|Subtract the second number from the first one|
 |CM_Multiply|Multiplies 2 numbers with the following formula **1***|
 |CM_Divide|Divides 2 numbers with the following formula **2***|
+|CM_printcn|Prints a complex number with the following format: `Re: a, Im: b`|
 
 ### Other functionalities
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
