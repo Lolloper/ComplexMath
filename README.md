@@ -5,7 +5,7 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 
 ### Documentation
 
-|Operation| Action|
+|Syntax| What does|
 |---------|-------|
 |CM_ComplexNumber|Struct for complex numbers|
 |CM_CreateComplexNumber|Works like a constructor in OOP, it takes real and immaginary values as 2 parameters|
