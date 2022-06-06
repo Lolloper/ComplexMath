@@ -7,6 +7,7 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 
 |Operation| Action|
 |---------|-------|
+|CM_ComplexNumber|Struct for complex numbers|
 |CM_CreateComplexNumber|Works like a constructor in OOP, it takes real and immaginary values as 2 parameters|
 |CM_Sum|Sums 2 numbers|
 |CM_Sub|Subtract the second number from the first one|
