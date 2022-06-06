@@ -21,5 +21,5 @@ This library also includes some other useful functions, like rad2deg and deg2rad
 Rembemer that $a + bi$ and $c + di$ are complex numbers  
 **1***: $(a + bi)(c + di) = ac - bd + (ad + bc)i$  
 **2***: $\frac{a + bi}{c + di} = \frac{ac+bd}{c^2 + d^2} + \frac{bc - ac}{c^2 + d^2}i$  
-**3***: $(a + bi)^{c + di} = e^{\ln{\sqrt{a^2 + b^2}}c - d\tan^{-1}{\frac{b}{a}}}(\cos{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}} +
-\i\sin{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}})$
+**3***: $(a + bi)^{c + di} = e^{\ln{\sqrt{a^2 + b^2}}c - d\tan^{-1}{\frac{b}{a}}}(\cos{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}} +$
+$\i\sin{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}})$
