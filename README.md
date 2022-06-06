@@ -11,9 +11,10 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 |CM_CreateComplexNumber()|Works like a constructor in OOP, it takes real and immaginary values as 2 parameters|
 |CM_Sum()|Sums 2 numbers|
 |CM_Sub()|Subtract the second number from the first one|
-|CM_Multiply()|Multiplies 2 numbers with the following formula **1***|
-|CM_Divide()|Divides 2 numbers with the following formula **2***|
+|CM_Multiply()|Multiplies 2 numbers using the following formula **1***|
+|CM_Divide()|Divides 2 numbers using the following formula **2***|
 |CM_printcn()|Prints a complex number with the following format: `Re: a, Im: b`|
+|CM_Pow()|Elevates the first number to the second number power using the following formula **3***|
 
 ### Other functionalities
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
