@@ -61,30 +61,6 @@ CM_ComplexNumber CM_Pow(CM_ComplexNumber a, CM_ComplexNumber b)
 	return CM_CreateComplexNumber((double) pre*cos(angle), (double) pre*sin(angle));
 }
 
-/* Faster sqrt */
-/*double _sqrt(double x)
-{
-	double y, iMin, iMax;
-	if (x == 1) y = 1;
-	else 
-	{
-		if (x < 0.0f) x = x;
-		else 
-		{
-			iMin=x/2;
-			while (1)
-			{
-				if ((iMin*iMin)-x < 0) {iMin+=x/10;}
-				else if ((iMin*iMin)-x > 0) {iMax=iMin; iMin-=x/10; break;}
-			}
-			y = (iMin+iMax)/2;
-			y = (float) 3*x/4;
-		}
-		y -= (y-x/y)/2; // Newton's iteration
-	}
-	return y;
-}
-*/
 /* Lambert W function */
 double CM_W(double x)
 {
