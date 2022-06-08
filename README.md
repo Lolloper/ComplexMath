@@ -26,4 +26,4 @@ Rembemer that $a + bi$ and $c + di$ are complex numbers
 **2***: $\frac{a + bi}{c + di} = \frac{ac+bd}{c^2 + d^2} + \frac{bc - ac}{c^2 + d^2}i$  
 **3***: $(a + bi)^{c + di} = e^{\ln{\sqrt{a^2 + b^2}}c - d\tan^{-1}{\frac{b}{a}}}(\cos{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}} +$
 $i\sin{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}})$  
-**4***: $W(z)= x, x_{n} = x_{n} - \frac{x_{n-1}e^{x_{n-1}}-z}{x_{n-1}e^{x_{n-1}()}}$
+**4***: $W(z)= x, x_{n} = x_{n} - \frac{x_{n-1}e^{x_{n-1}}-z}{e^{x_{n-1}()}}$
