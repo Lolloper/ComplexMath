@@ -16,8 +16,8 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 |CM_printcn()|Prints a complex number with the following format: `Re: a, Im: b`|
 |CM_Pow()|Elevates the first number to the second number power using the following formula **3***|
 |CM_W()|Returns the Lambert W function of a number (at the moment it works only with real ones) with the following formula **4***|
-|CM_Ln()|desc|
-|CM_Log()|desc|
+|CM_Ln()|Take the natural logarithm with the following formula **5**|
+|CM_Log()|Takes the first argument logarithm base of the second argument using the logarithm general formula **6**|
 |CM_RiemannZeta()|desc|
 
 ### Other functionalities
@@ -30,6 +30,7 @@ Rembemer that $a + bi$ and $c + di$ are complex numbers
 **3***: $(a + bi)^{c + di} = e^{\ln{\sqrt{a^2 + b^2}}c - d\tan^{-1}{\frac{b}{a}}}(\cos{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}} +$
 $i\sin{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}})$  
 **4***: $W(z)= x, x_{n} = x_{n} - \frac{x_{n-1}e^{x_{n-1}}-z}{e^{x_{n-1}}(x_{n-1}+1)}$
+**5**: $\lnx$
 
 ### WARNINGS
 The Lambert W function doesn't work pretty well, so it may probably work bad
