@@ -15,7 +15,7 @@ Well, you can do basically every operation between complex numbers: sum, subtrac
 |CM_Divide()|Divides 2 numbers using the following formula **2***|
 |CM_printcn()|Prints a complex number with the following format: `Re: a, Im: b`|
 |CM_Pow()|Elevates the first number to the second number power using the following formula **3***|
-[//]: <> |CM_W()|Returns the Lambert W function of a number (at the moment it works only with real ones) with the following formula **4***|
+[//]:  (|CM_W()|Returns the Lambert W function of a number (at the moment it works only with real ones) with the following formula **4***|)
 
 ### Other functionalities
 This library also includes some other useful functions, like rad2deg and deg2rad, respectively radiants to degrees and degrees to radiants.
