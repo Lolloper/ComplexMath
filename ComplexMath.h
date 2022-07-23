@@ -73,7 +73,7 @@ double CM_W(double x)
 	return y;
 }
 
-CM_ComplexNumber CM_ln(CM_ComplexNumber x)
+CM_ComplexNumber CM_Ln(CM_ComplexNumber x)
 {
 	double theta;
 	if (abs(x.Re) > 0.0f) theta = (double) atan(x.Im/x.Re);
@@ -82,7 +82,7 @@ CM_ComplexNumber CM_ln(CM_ComplexNumber x)
 	return CM_CreateComplexNumber(log(r), theta);	
 }
 
-CM_ComplexNumber CM_log(CM_ComplexNumber base, CM_ComplexNumber arg)
+CM_ComplexNumber CM_Log(CM_ComplexNumber base, CM_ComplexNumber arg)
 {
 	CM_ComplexNumber result = CM_Div(CM_ln(base), CM_ln(arg));
 	return CM_CreateComplexNumber(result.Re, result.Im);
