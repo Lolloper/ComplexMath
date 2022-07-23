@@ -61,6 +61,30 @@ CM_ComplexNumber CM_Pow(CM_ComplexNumber a, CM_ComplexNumber b)
 	return CM_CreateComplexNumber((double) pre*cos(angle), (double) pre*sin(angle));
 }
 
+/* Faster sqrt */
+/*double _sqrt(double x)
+{
+	double y, iMin, iMax;
+	if (x == 1) y = 1;
+	else 
+	{
+		if (x < 0.0f) x = x;
+		else 
+		{
+			iMin=x/2;
+			while (1)
+			{
+				if ((iMin*iMin)-x < 0) {iMin+=x/10;}
+				else if ((iMin*iMin)-x > 0) {iMax=iMin; iMin-=x/10; break;}
+			}
+			y = (iMin+iMax)/2;
+			y = (float) 3*x/4;
+		}
+		y -= (y-x/y)/2; // Newton's iteration
+	}
+	return y;
+}
+*/
 /* Lambert W function */
 double CM_W(double x)
 {
@@ -71,4 +95,34 @@ double CM_W(double x)
 		y -= (y*expy - x)/(expy*(y + 1));
 	}
 	return y;
+}
+
+CM_ComplexNumber CM_ln(CM_ComplexNumber x)
+{
+	double theta;
+	if (abs(x.Re) > 0.0f) theta = (double) atan(x.Im/x.Re);
+	else theta = CM_PI;
+	double r = sqrt((x.Re*x.Re) + (x.Im*x.Im));
+	return CM_CreateComplexNumber(log(r), theta);	
+}
+
+CM_ComplexNumber CM_log(CM_ComplexNumber base, CM_ComplexNumber arg)
+{
+	CM_ComplexNumber result = CM_Div(CM_ln(base), CM_ln(arg));
+	return CM_CreateComplexNumber(result.Re, result.Im);
+}
+
+CM_ComplexNumber CM_RiemannZeta(CM_ComplexNumber z, int maxIteration)
+{
+	CM_ComplexNumber result = CM_CreateComplexNumber(0.0f, 0.0f), numbToSum;
+	
+	if(((int)z.Re%2 == 0 && z.Re < 0 ) && z.Im == 0.0f) result = CM_CreateComplexNumber(0.0f, 0.0f);
+	else if (z.Re == -1.0f && z.Im == 0.0f) result = CM_CreateComplexNumber((double)-1/12, 0.0f);
+	else
+		for (int i = 1; i <= maxIteration; i++)
+		{
+			numbToSum = CM_Pow(CM_CreateComplexNumber((double)i, 0.0f), CM_CreateComplexNumber(-z.Re, -z.Im));
+			result = CM_Sum(result, numbToSum);
+		}
+	return result;
 }
