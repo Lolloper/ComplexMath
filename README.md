@@ -31,6 +31,7 @@ Rembemer that $a + bi$ and $c + di$ are complex numbers
 $i\sin{(\ln{\sqrt{a^2 + b^2}d + c\tan^{-1}{\frac{b}{a}})}})$  
 **4***: $W(z)= x, x_{n} = x_{n} - \frac{x_{n-1}e^{x_{n-1}}-z}{e^{x_{n-1}}(x_{n-1}+1)}$  
 **5**: $\ln z = \ln r + (\theta + 2k\pi)i,  k \in Z$
+**6**: $\log_{b}a$
 
 ### WARNINGS
 The Lambert W function doesn't work pretty well, so it may probably work bad
