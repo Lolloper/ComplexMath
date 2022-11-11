@@ -55,7 +55,7 @@ CM_ComplexNumber CM_Div(CM_ComplexNumber a, CM_ComplexNumber b)
 CM_ComplexNumber CM_Pow(CM_ComplexNumber a, CM_ComplexNumber b)
 {
 	double r = sqrt(a.Re*a.Re + a.Im*a.Im);
-	double theta = atan(a.Im/a.Re);
+	double theta = atan2(a.Im, a.Re);
 	double pre = pow(r, b.Re)*exp(-b.Im*theta);
 	double angle = (b.Re*theta) + (b.Im*log(r));
 	return CM_CreateComplexNumber((double) pre*cos(angle), (double) pre*sin(angle));
